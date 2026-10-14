@@ -90,6 +90,7 @@ mini-antivirus-ai/
 ├── data/
 ├── notebooks/
 └── src/
+```
 
 ## Limitaciones
 Este proyecto tiene fines educativos y de portfolio. Durante las primeras fases se trabajará con datasets que contienen características extraídas de archivos, evitando la ejecución de malware real.
