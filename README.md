@@ -68,17 +68,18 @@ El proyecto seguirá las siguientes fases:
 
 ### Completado
 
-- Definición del proyecto.
-- Definición de objetivos.
-- Diseño de arquitectura.
-- Creación del repositorio GitHub.
+- Definición del proyecto y objetivos.
+- Diseño de arquitectura y repositorio GitHub (Fase 0).
+- Selección y carga del dataset principal (Kaggle CC0).
+- Análisis Exploratorio de Datos - EDA (notebooks/01_eda.ipynb) (Fase 1).
+	- Verificación de integridad, volumetría y calidad de datos (sin nulos ni duplicados exactos).
+	- Auditoría de la variable objetivo y análisis de desequilibrio de clases.
+	- Identificación de columnas constantes y exclusión de la columna identificativa Name.
+	- Detección de hallazgo crítico: indicios de procedencia / fuga de información mediante el prefijo VirusShare_.
 
 ### Próximos pasos
 
-- Selección del dataset.
-- Creación del notebook de EDA.
-- Validación de la calidad de los datos.
-- Definición de la variable objetivo.
+- Inicio de la Fase 2: Data Cleaning (eliminación de columnas constantes, tratamiento de variables y preparación de matrices para modelado).
 
 ## Estructura inicial
 
@@ -88,8 +89,13 @@ mini-antivirus-ai/
 ├── requirements.txt
 ├── .gitignore
 ├── data/
+│   ├── README.md
+│   ├── dataset_malwares.csv
+│   └── dataset_test.csv
 ├── notebooks/
+│   └── 01_eda.ipynb
 └── src/
+    └── __init__.py
 ```
 
 ## Limitaciones
