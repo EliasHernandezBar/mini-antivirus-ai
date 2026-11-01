@@ -69,17 +69,13 @@ El proyecto seguirá las siguientes fases:
 ### Completado
 
 - Definición del proyecto y objetivos.
-- Diseño de arquitectura y repositorio GitHub (Fase 0).
-- Selección y carga del dataset principal (Kaggle CC0).
-- Análisis Exploratorio de Datos - EDA (notebooks/01_eda.ipynb) (Fase 1).
-	- Verificación de integridad, volumetría y calidad de datos (sin nulos ni duplicados exactos).
-	- Auditoría de la variable objetivo y análisis de desequilibrio de clases.
-	- Identificación de columnas constantes y exclusión de la columna identificativa Name.
-	- Detección de hallazgo crítico: indicios de procedencia / fuga de información mediante el prefijo VirusShare_.
+- Diseño de arquitectura y repositorio GitHub.
+- **Fase 1 (EDA):** Análisis exploratorio completado, verificación de integridad, auditoría de nulos/duplicados, análisis de la variable objetivo (`Malware`) y detección del hallazgo crítico del prefijo `VirusShare_`.
+- **Fase 2 (Data Cleaning):** Limpieza de datos completada, eliminación de columnas constantes, exclusión justificada de la columna identificativa `Name` para prevenir fugas de información (*data leakage*), y exportación del dataset optimizado `data/dataset_cleaned.csv`.
 
 ### Próximos pasos
 
-- Inicio de la Fase 2: Data Cleaning (eliminación de columnas constantes, tratamiento de variables y preparación de matrices para modelado).
+- **Fase 3 (Feature Engineering):** Evaluación de transformaciones sobre las variables predictoras, análisis del escalado de datos y realización de la división estratificada (*Train/Test Split*) para preparar el entrenamiento de los modelos de clasificación.
 
 ## Estructura inicial
 
