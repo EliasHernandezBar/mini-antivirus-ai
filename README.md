@@ -72,10 +72,11 @@ El proyecto seguirá las siguientes fases:
 - Diseño de arquitectura y repositorio GitHub.
 - **Fase 1 (EDA):** Análisis exploratorio completado, verificación de integridad, auditoría de nulos/duplicados, análisis de la variable objetivo (`Malware`) y detección del hallazgo crítico del prefijo `VirusShare_`.
 - **Fase 2 (Data Cleaning):** Limpieza de datos completada, eliminación de columnas constantes, exclusión justificada de la columna identificativa `Name` para prevenir fugas de información (*data leakage*), y exportación del dataset optimizado `data/dataset_cleaned.csv`.
+- **Fase 3 (Feature Engineering):** Aislamiento de variables predictoras, división estratificada de los datos (*Train/Test Split*), escalado seguro mediante `StandardScaler` (evitando *data leakage*) y exportación estructurada de los conjuntos procesados en `data/fase_3/`.
 
 ### Próximos pasos
 
-- **Fase 3 (Feature Engineering):** Evaluación de transformaciones sobre las variables predictoras, análisis del escalado de datos y realización de la división estratificada (*Train/Test Split*) para preparar el entrenamiento de los modelos de clasificación.
+- **Fase 4 (Modelado y Entrenamiento):** Selección de algoritmos de clasificación base (ej. Árboles de Decisión, Random Forest), definición de métricas de evaluación adaptadas al desequilibrio de clases, y entrenamiento inicial de los modelos.
 
 ## Estructura inicial
 
